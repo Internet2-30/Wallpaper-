@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#087f3e">
+
+    <title>NYSC Memories Wallpapers</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="logo">NYSC</div>
+
+        <div>
+            <h1>NYSC Memories</h1>
+            <p>Wallpaper Collection</p>
+        </div>
+
+    </div>
+
+    <button id="slideshowBtn" class="icon-btn">
+        ▶
+    </button>
+
+</header>
+
+
+<main>
+
+    <section class="hero">
+
+        <div>
+
+            <span class="badge">
+                2026 • Batch B
+            </span>
+
+            <h2>
+                Your NYSC moments,
+                <span>beautifully displayed.</span>
+            </h2>
+
+            <p>
+                Browse your NYSC photos, open them full-screen,
+                download them, or start an automatic slideshow.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <strong id="count">10</strong>
+
+            <small>
+                Wallpapers
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <div class="toolbar">
+
+        <div class="search-wrap">
+
+            <span>⌕</span>
+
+            <input
+                id="search"
+                type="search"
+                placeholder="Search wallpapers..."
+            >
+
+        </div>
+
+
+        <button id="randomBtn" class="control-btn">
+            🎲 Random
+        </button>
+
+
+        <button id="fullBtn" class="control-btn">
+            ⛶ Fullscreen
+        </button>
+
+    </div>
+
+
+
+    <section id="gallery" class="gallery"></section>
+
+</main>
+
+
+
+<!-- FULLSCREEN VIEWER -->
+
+<div id="viewer" class="viewer">
+
+    <button id="closeViewer" class="close-btn">
+        ×
+    </button>
+
+
+    <button id="prevBtn" class="nav-btn prev">
+        ‹
+    </button>
+
+
+    <div class="viewer-content">
+
+        <img
+            id="viewerImg"
+            src=""
+            alt="NYSC wallpaper"
+        >
+
+
+        <div class="viewer-actions">
+
+            <div>
+
+                <h3 id="viewerTitle">
+                    NYSC Memory
+                </h3>
+
+                <p id="viewerIndex"></p>
+
+            </div>
+
+
+            <div class="actions">
+
+                <button
+                    id="downloadBtn"
+                    class="action primary"
+                >
+                    ⬇ Download
+                </button>
+
+
+                <button
+                    id="wallpaperBtn"
+                    class="action"
+                >
+                    📱 Use as Wallpaper
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button id="nextBtn" class="nav-btn next">
+        ›
+    </button>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
